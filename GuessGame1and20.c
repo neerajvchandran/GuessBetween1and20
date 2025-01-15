@@ -5,7 +5,7 @@ int main(){
   int num,guess,noguesses=5,time_;
   time_t t;
 
-  srand((unsigned) time(&t));
+  srand((unsigned) time(&t)); //To ensure unique random numbers are generated each time the program runs.
   num = rand()%21;
   for(time_=1;time_<=noguesses;++time_){
     printf("Guess a number between 0 and 20 inclusive: ");
